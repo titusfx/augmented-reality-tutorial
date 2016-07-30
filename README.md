@@ -24,7 +24,7 @@ Open a new project and set up the permissions in the `AndroidManifest.xml`. We w
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     
-    <uses-feature android:name="android.hardware.camera" required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" >
 
 We will be targeting devices using Gingerbread (Android Version 2.3, API 10) so to adhere to this we will not be using the latest sensor API. Thus you will note that some of the code we will use is deprecated - so again this is so we can keep the code backwards compatible.
